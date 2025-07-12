@@ -1,9 +1,12 @@
----
-version: null
 meta:
   environment: python
   toolchain:
-    name: docker
-    version: latest
-build: {}
-run: {}
+    name: pip
+    version: "3.11"
+build:
+  requirementsPath: requirements.txt
+run:
+  scriptName: bot.py
+  command: "python bot.py"
+  persistenceMount: /data
+  containerPort: "8080"
