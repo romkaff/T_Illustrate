@@ -225,7 +225,7 @@ async def calc_price(callback: types.callback_query, state: FSMContext):
     InviteOrder.preliminary_price = calc_preliminary_price()
     preliminary_text = (
         'Вы выбрали:\n'
-        f'Вариант приглашения: <strong>{str(data['personal'])}</strong>\n'
+        f'Вариант приглашения: <strong>{str(data["personal"])}</strong>\n'
         f'Изготовление: <strong>{str(data['finish_type'])}</strong>\n'
         f'Вид шаблона: <strong>{str(data['template_type'])}</strong>\n'
         f'Количество: <strong>{str(data['quantity'])}</strong>\n'
