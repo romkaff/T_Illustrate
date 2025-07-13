@@ -378,7 +378,7 @@ async def add_template_id(callback: types.callback_query, state: FSMContext):
     change_condition_text = (
         'Внимание!\n'
         'Вы выбрали свой вариант вместо готового шаблона, а это параметр, влияющий на стоимость.\n\n'
-        f'Вариант приглашения: <strong>{str(data['personal'])}</strong>\n'
+        f'Вариант приглашения: <strong>{str(data["personal"])}</strong>\n'
         f'Изготовление: <strong>{str(data['finish_type'])}</strong>\n'
         f'Вид шаблона: <strong>{str(data['template_type'])}</strong>\n'
         f'Количество: <strong>{str(data['quantity'])}</strong>\n'
