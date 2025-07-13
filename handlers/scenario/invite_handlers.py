@@ -227,8 +227,8 @@ async def calc_price(callback: types.callback_query, state: FSMContext):
         'Вы выбрали:\n'
         f'Вариант приглашения: <strong>{str(data["personal"])}</strong>\n'
         f'Изготовление: <strong>{str(data["finish_type"])}</strong>\n'
-        f'Вид шаблона: <strong>{str(data['template_type'])}</strong>\n'
-        f'Количество: <strong>{str(data['quantity'])}</strong>\n'
+        f'Вид шаблона: <strong>{str(data["template_type"])}</strong>\n'
+        f'Количество: <strong>{str(data["quantity"])}</strong>\n'
         f'Предварительная стоимость: <strong>{float(InviteOrder.preliminary_price)}</strong>'
     )
 
@@ -379,9 +379,9 @@ async def add_template_id(callback: types.callback_query, state: FSMContext):
         'Внимание!\n'
         'Вы выбрали свой вариант вместо готового шаблона, а это параметр, влияющий на стоимость.\n\n'
         f'Вариант приглашения: <strong>{str(data["personal"])}</strong>\n'
-        f'Изготовление: <strong>{str(data['finish_type'])}</strong>\n'
-        f'Вид шаблона: <strong>{str(data['template_type'])}</strong>\n'
-        f'Количество: <strong>{str(data['quantity'])}</strong>\n'
+        f'Изготовление: <strong>{str(data["finish_type"])}</strong>\n'
+        f'Вид шаблона: <strong>{str(data["template_type"])}</strong>\n'
+        f'Количество: <strong>{str(data["quantity"])}</strong>\n'
         f'Новая рассчитанная стоимость:: <strong>{float(InviteOrder.price)}</strong>'
     )
 
@@ -466,7 +466,7 @@ async def change_person_list(callback: types.callback_query, state: FSMContext):
     data = await state.get_data()
 
     await callback.message.answer(
-        f'Список получателей сейчас такой: {data['addressing']}\n\n'
+        f'Список получателей сейчас такой: {data["addressing"]}\n\n'
         'Вы хотите изменить его?', reply_markup=get_callback_btns(
                 btns={
                     "Продолжить":"do_change_person",
@@ -556,11 +556,11 @@ async def create_order(callback: types.callback_query, state: FSMContext):
 
     final_text = (
         'Вы выбрали:\n'
-        f'Вариант приглашения: <strong>{str(data['personal'])}</strong>\n'
-        f'Изготовление: <strong>{str(data['finish_type'])}</strong>\n'
-        f'Вид шаблона: <strong>{str(data['template_type'])}</strong>\n'
-        f'Количество: <strong>{int(data['quantity'])}</strong>\n'
-        f'Предварительная стоимость: <strong>{float(data['final_price'])}</strong>'
+        f'Вариант приглашения: <strong>{str(data["personal"])}</strong>\n'
+        f'Изготовление: <strong>{str(data["finish_type"])}</strong>\n'
+        f'Вид шаблона: <strong>{str(data["template_type"])}</strong>\n'
+        f'Количество: <strong>{int(data["quantity"])}</strong>\n'
+        f'Предварительная стоимость: <strong>{float(data["final_price"])}</strong>'
     )
 
     await callback.message.answer(final_text, reply_markup=get_callback_btns(
@@ -601,9 +601,9 @@ async def final_next(callback: types.callback_query, state: FSMContext, session:
 @invite_router.message(InviteOrder.payment, F.photo)
 async def send_payment_photo(message: types.Message, bot: Bot, state: FSMContext, session: AsyncSession):
     data = await state.get_data()
-    data['order_id'] = InviteOrder.created_order_id
-    data['amount'] = data['final_price']
-    data['check_image'] = message.photo[-1].file_id
+    data["order_id"] = InviteOrder.created_order_id
+    data["amount"] = data["final_price"]
+    data["check_image"] = message.photo[-1].file_id
     await orm_add_payment(session, data)
     await message.answer('Оплата по заказу принята! По готовности с вами свяжутся! Спасибо!')
     await state.clear()

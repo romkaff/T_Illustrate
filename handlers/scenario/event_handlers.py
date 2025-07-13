@@ -411,10 +411,10 @@ async def no_need_agreement(callback: types.CallbackQuery, state: FSMContext):
 def get_final_text(data: dict, amount: float):
     final_text = (
         'Вы выбрали:\n'
-        f'Дата мероприятия: <strong>{str(data['event_date'])}</strong>\n'
-        f'Место: <strong>{str(data['event_place'])}</strong>\n'
-        f'Вариант вручения: <strong>{str(data['handing_type'])}</strong>\n'
-        f'Вид скетча: <strong>{str(data['execution_type'])}</strong>\n'
+        f'Дата мероприятия: <strong>{str(data["event_date"])}</strong>\n'
+        f'Место: <strong>{str(data["event_place"])}</strong>\n'
+        f'Вариант вручения: <strong>{str(data["handing_type"])}</strong>\n'
+        f'Вид скетча: <strong>{str(data["execution_type"])}</strong>\n'
     )
 
     if data['execution_type'] in ['Акварель фэшн','Акварель портреты']:
@@ -425,9 +425,9 @@ def get_final_text(data: dict, amount: float):
                 final_text = f'{final_text}Дополнительно: <strong>Без брендирования</strong>\n'
 
     final_text = (
-        f'{final_text}В чем вручаем: <strong>{str(data['what_to_hand_over'])}</strong>\n'
-        f'Желаемое количество часов: <strong>{str(data['hours_qty'])}</strong>\n'
-        f'Если не успеваем всех нарисовать: <strong>{str(data['no_time_reaction'])}</strong>\n\n'
+        f'{final_text}В чем вручаем: <strong>{str(data["what_to_hand_over"])}</strong>\n'
+        f'Желаемое количество часов: <strong>{str(data["hours_qty"])}</strong>\n'
+        f'Если не успеваем всех нарисовать: <strong>{str(data["no_time_reaction"])}</strong>\n\n'
     )  
 
     final_text = (
