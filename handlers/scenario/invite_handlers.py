@@ -76,7 +76,7 @@ async def start_invites(callback: types.CallbackQuery, state: FSMContext, sessio
 
     match len(inv_orders):
         case 0:
-            await callback.message.answer(invite_string.INV_WELCOME + invite_string.INV_PERSONAL, get_callback_btns(
+            await callback.message.answer(invite_string.INV_WELCOME + invite_string.INV_PERSONAL, reply_markup=get_callback_btns(
                         btns={
                             "Именные":"personal",
                             "Неименные":"no_personal",
