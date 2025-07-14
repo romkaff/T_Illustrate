@@ -96,8 +96,6 @@ async def orm_add_payment(session: AsyncSession, data: dict):
 
 # Получить шаблоны пригласительных
 async def orm_get_inv_orders(session: AsyncSession, user_id: int):
-    print(f'USER ID = {user_id}')
-    
     query = select(InvOrder).where(InvOrder.user_id == user_id)
     result = await session.execute(query)
     return result.scalars().all()
