@@ -1,0 +1,503 @@
+{
+    "DigCommon": {
+        "name": "Цифра скетч",
+        "back_data": "scetches_portfolio",
+        "main_title": "Цифровые скетчи с печатью (А6 или А5)\n6-7 человек в час",
+        "items": [
+            {
+                "id": 1,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3764-6664-4832-a437-386335373661/-/resize/670x/-/format/webp/202503_1.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6338-6563-4432-a139-656533313135/-/resize/670x/-/format/webp/20250516_2.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3461-3630-4739-b535-313132636337/-/resize/670x/-/format/webp/20250516_3.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6361-3838-4635-b039-623938323530/-/resize/670x/-/format/webp/20250516_10.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3665-3232-4934-b835-656430386639/-/resize/670x/-/format/webp/20250516_1.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3166-3764-4530-b763-303235656232/-/resize/670x/-/format/webp/20250516_9.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild6463-6364-4463-b136-326634326437/20250516_7.jpg",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3862-3166-4661-a132-613838323066/20250516_8.jpg",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3963-6438-4139-a136-656533663136/20250516_6.jpg",
+                "description": ""
+            },
+            {
+                "id": 10,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3832-6564-4265-b064-353362373636/20250516_4.jpg",
+                "description": ""
+            },
+            {
+                "id": 11,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3539-3838-4331-b064-313566303466/14.jpg",
+                "description": ""
+            },
+            {
+                "id": 12,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3337-3766-4631-b765-316266366530/15.jpg",
+                "description": ""
+            },
+            {
+                "id": 13,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3736-6535-4132-b032-386135633265/-/format/webp/202503_2.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 14,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild6665-3539-4764-b664-326635643631/22.jpg",
+                "description": ""
+            },
+            {
+                "id": 15,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild6634-3666-4262-a566-363236333362/23.jpg",
+                "description": ""
+            },
+            {
+                "id": 16,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3939-3136-4865-b932-383739363764/-/format/webp/25.jpg.webp",
+                "description": ""
+            }
+        ]
+    },
+    "AkvaPort": {
+        "name": "Акварель портрет",
+        "back_data": "scetches_portfolio",
+        "main_title": "Акварельные портреты А5\n5-6 человек в час",
+        "items": [
+            {
+                "id": 1,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6535-3332-4437-a633-626439613566/-/resize/730x/-/format/webp/__091_2.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6331-6230-4739-b161-613434306237/-/resize/770x/-/format/webp/103__2_2.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3239-3834-4535-b661-633332343933/-/resize/748x/-/format/webp/__01.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3961-6663-4738-b932-643137303833/-/resize/748x/-/format/webp/__02.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3835-3032-4032-a463-653564623935/-/format/webp/__03.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3863-3365-4031-a336-346435303032/-/resize/748x/-/format/webp/__04.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3563-6336-4830-b164-366332306133/-/resize/748x/-/format/webp/__051.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3061-3664-4739-b838-366133363137/-/resize/748x/-/format/webp/__061.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6562-3334-4661-a339-313362313537/-/resize/748x/-/format/webp/__071.jpg.webp",
+                "description": ""
+            }
+        ]
+    },
+    "AkvaFshn": {
+        "name": "Акварель фэшн",
+        "back_data": "scetches_portfolio",
+        "main_title": "Акварель фэшн А5\n5-7 человек в час",
+        "items": [
+            {
+                "id": 1,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3864-3437-4731-a638-353466666636/-/format/webp/_Fashion_121_2.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6330-3363-4139-b365-666361313836/-/format/webp/_Fashion_111_2.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3539-3231-4166-a233-633161643634/-/resize/1000x/-/format/webp/_Fashion_131.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6466-3234-4566-a436-613834306230/-/format/webp/_Fashion_101.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3132-3035-4766-a336-333830333462/20251018_07-1.jpg",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3235-6534-4865-b434-393964616438/_Fashion_03.jpg",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "title": "с",
+                "image_url": "https://static.tildacdn.com/tild3037-3233-4661-a461-353561313632/_Fashion_091.jpg",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild6631-6365-4261-a434-323636333537/_Fashion_041.jpg",
+                "description": ""
+            },
+            {
+                "id": 9,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3534-3933-4437-b839-386263323732/_Fashion_06.jpg",
+                "description": ""
+            },
+            {
+                "id": 10,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3938-3337-4636-a561-383765373962/_Fashion_07.jpg",
+                "description": ""
+            },
+            {
+                "id": 11,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3935-3935-4936-b662-643764373037/_2025-01-25_01.jpg",
+                "description": ""
+            },
+            {
+                "id": 12,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3236-3861-4538-b035-626563316238/-/format/webp/20251031_04.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 13,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3939-3135-4330-a439-383731656464/20251031_06.jpg",
+                "description": ""
+            },
+            {
+                "id": 14,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3437-3132-4230-a166-313366613138/_Fashion_081.jpg",
+                "description": ""
+            },
+            {
+                "id": 15,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild6532-6637-4063-a534-636235326335/20251031_07-1.jpg",
+                "description": ""
+            },
+            {
+                "id": 16,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3131-6535-4566-a339-336533313265/20250805_01.jpg",
+                "description": ""
+            },
+            {
+                "id": 17,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3937-3061-4631-b031-666365333130/20251018_02.jpg",
+                "description": ""
+            },
+            {
+                "id": 18,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3631-6665-4231-b934-643336346435/20251018_03.jpg",
+                "description": ""
+            },
+            {
+                "id": 19,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3331-3963-4738-b836-373962643138/20251018_05.jpg",
+                "description": ""
+            }
+        ]
+    },
+    "DigBW": {
+        "name": "Цифра ч/б портрет",
+        "back_data": "portfolio_other",
+        "main_title": "Цифра ч/б портрет\n8-10 человек в час",
+        "items": [
+            {
+                "id": 1,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6566-6663-4732-b430-326666343334/-/resize/680x/-/format/webp/photo_1_2026-01-04_0.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6362-3961-4830-b036-353331333530/-/resize/680x/-/format/webp/photo_3_2026-01-04_0.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3232-3461-4639-a436-616239346631/-/resize/680x/-/format/webp/photo_2_2026-01-04_0.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3531-6165-4265-a237-306466356337/-/resize/700x/-/format/webp/IMG_20250411_142034_.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3864-6361-4361-b232-373262656533/IMG_20250411_163317_.jpg",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3133-3735-4834-b237-393065336233/IMG_20250411_174528_.jpg",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3665-3862-4162-b462-386662643438/IMG_20250411_170502_.jpg",
+                "description": ""
+            }
+        ]
+    },
+    "DigLine": {
+        "name": "Цифра линейный скетч",
+        "back_data": "portfolio_other",
+        "main_title": "Цифра линейный скетч\n20 человек в час",
+        "items": [
+            {
+                "id": 1,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3730-3361-4233-a333-396131613833/-/resize/680x/-/format/webp/photo_2025-04-22_18-.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6138-3566-4362-a639-333765326561/-/format/webp/photo_2025-04-22_18-.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3361-3334-4661-a437-383535366136/-/resize/680x/-/format/webp/photo_2025-04-22_18-.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3431-3761-4133-b530-336536323339/-/format/webp/photo_2025-04-22_19-.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3463-6338-4337-b736-376362313835/photo_2025-04-22_21-.jpg",
+                "description": ""
+            }
+        ]
+    },
+    "DigSilu": {
+        "name": "Цифра силуэтный скетч",
+        "back_data": "portfolio_other",
+        "main_title": "Цифра силуэтный скетч\n20 человек в час",
+        "items": [
+            {
+                "id": 1,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6265-6430-4735-b837-396535616364/-/resize/704x/-/format/webp/photo_6_2026-01-04_0.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3437-3564-4137-a132-343961663738/-/resize/704x/-/format/webp/photo_12_2026-01-04_.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3762-3634-4339-a563-633964353164/-/resize/704x/-/format/webp/photo_4_2026-01-04_0.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3261-6238-4530-a333-366332663566/-/resize/704x/-/format/webp/photo_8_2026-01-04_0.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6461-3664-4036-b362-396136643761/-/format/webp/photo_7_2026-01-04_0.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 6,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3634-6162-4263-b332-373762313063/photo_9_2026-01-04_0.jpg",
+                "description": ""
+            },
+            {
+                "id": 7,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild6633-6165-4936-a362-363761323034/photo_5_2026-01-04_0.jpg",
+                "description": ""
+            },
+            {
+                "id": 8,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild3330-3339-4739-b066-396433306538/photo_11_2026-01-04_.jpg",
+                "description": ""
+            }
+        ]
+    },
+    "DigCom": {
+        "name": "Цифра комикс",
+        "back_data": "portfolio_other",
+        "main_title": "Цифра комикс\n5-6 человек в час",
+        "items": [
+            {
+                "id": 1,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6266-3539-4263-b834-313938623639/-/resize/700x/-/format/webp/photo_1_2025-07-27_2.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3533-3933-4136-a330-323563356638/-/resize/700x/-/format/webp/photo_10_2025-07-27_.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6166-3239-4664-b665-643865613239/-/resize/700x/-/format/webp/photo_2_2025-07-27_2.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3134-3765-4236-b565-353637663638/-/resize/700x/-/format/webp/photo_6_2025-07-27_2.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild6566-6231-4564-a462-393933353437/photo_9_2025-07-27_2.jpg",
+                "description": ""
+            }
+        ]
+    },
+    "DigOth": {
+        "name": "Цифра другое", 
+        "back_data": "portfolio_other",
+        "main_title": "Гости в виде героев фильмов\n6-7 человек в час",
+        "items": [
+            {
+                "id": 1,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3434-3735-4361-a638-303361363333/-/resize/680x/-/format/webp/photo_12_2025-11-18_.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 2,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3065-3931-4234-a162-333761623439/-/resize/680x/-/format/webp/photo_6_2025-11-18_1.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 3,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild3930-6635-4439-a531-626662383534/-/resize/680x/-/format/webp/photo_10_2025-11-16_.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 4,
+                "title": "",
+                "image_url": "https://optim.tildacdn.com/tild6161-3566-4265-a564-336431616164/-/resize/680x/-/format/webp/photo_22_2025-11-16_.jpg.webp",
+                "description": ""
+            },
+            {
+                "id": 5,
+                "title": "",
+                "image_url": "https://static.tildacdn.com/tild6432-6231-4634-a334-393239633766/photo_16_2025-11-16_.jpg",
+                "description": ""
+            }
+        ]
+    }        
+  }
+  

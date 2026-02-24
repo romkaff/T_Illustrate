@@ -22,7 +22,7 @@ class IsAdmin(Filter):
     def __init__(self) -> None:
         pass
     
-    admin_id = os.getenv('BOT_ADMIN')
+    admins_id = os.getenv('BOT_ADMINS')
 
     async def __call__(self, message: Message) -> bool:
-        return str(message.from_user.id) == self.admin_id
+        return str(message.from_user.id) in self.admins_id

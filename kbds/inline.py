@@ -1,18 +1,31 @@
+import os
+
 from aiogram.filters.callback_data import CallbackData
 from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 from filters import chat_types
 
+from strings import general_string
 
+
+#
+#       Начальный экран
+#
 def get_start_keyboard(is_admin: bool):
     keyboard = InlineKeyboardBuilder()
 
-    keyboard.add(InlineKeyboardButton(text='Приглашения',
-                callback_data='start_invites'))
-    keyboard.add(InlineKeyboardButton(text='Портреты гостей',
-                callback_data='start_events'))
-
+    keyboard.add(InlineKeyboardButton(text='Услуги',
+                callback_data='start_services'))
+    keyboard.add(InlineKeyboardButton(text='Перейти на сайт',
+                url=general_string.WEB_SITE,
+                callback_data='start_site'))
+    keyboard.add(InlineKeyboardButton(text='Написать в личку',
+                url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+                callback_data='start_private'))
+    keyboard.add(InlineKeyboardButton(text='Поделиться с другом',
+                callback_data='start_share'))
+    
     if is_admin:
         keyboard.add(InlineKeyboardButton(text='Админка',
                     callback_data='start_adminka'))
@@ -20,22 +33,90 @@ def get_start_keyboard(is_admin: bool):
     return keyboard.adjust(1).as_markup(resize_keyboard=True)
 
 
+#
+#       Админская клавиатура
+#
 def get_adminka_keyboard():
     keyboard = InlineKeyboardBuilder()
 
-    keyboard.add(InlineKeyboardButton(text='Заказы Мероприятий',
-            callback_data='admin_event_orders'))
-    keyboard.add(InlineKeyboardButton(text='Приглашения - заказы',
-            callback_data='admin_invite_orders'))
-    keyboard.add(InlineKeyboardButton(text='Приглашения - шаблоны',
-            callback_data='admin_invite_templates'))
-    keyboard.add(InlineKeyboardButton(text='Мое портфолио',
-            callback_data='admin_poftfolio'))
+    keyboard.add(InlineKeyboardButton(text='Рассылки',
+            callback_data='admin_mailing'))
         
     return keyboard.adjust(1).as_markup(resize_keyboard=True)
 
 
+#
+#       Экран Услуги
+#
+def get_services_keyboard():
+    keyboard = InlineKeyboardBuilder()
 
+    keyboard.add(InlineKeyboardButton(text='Скетчи',
+                callback_data='service_scetches'))
+    keyboard.add(InlineKeyboardButton(text='Задать вопрос',
+            url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+            callback_data='scetches_private'))
+
+    return keyboard.adjust(1).as_markup(resize_keyboard=True)
+
+
+#
+#       Скетчи
+#
+def get_scetches_keyboard():
+    keyboard = InlineKeyboardBuilder()
+
+    keyboard.add(InlineKeyboardButton(text='Тарифы',
+                callback_data='scetches_price'))
+    keyboard.add(InlineKeyboardButton(text='Примеры работ',
+                callback_data='scetches_portfolio'))
+    keyboard.add(InlineKeyboardButton(text='Заказать',
+                callback_data='scetches_order')) 
+    keyboard.add(InlineKeyboardButton(text='Задать вопрос',
+            url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+            callback_data='scetches_private'))
+    keyboard.add(InlineKeyboardButton(text='К списку услуг',
+                callback_data='start_services'))     
+
+    return keyboard.adjust(1).as_markup(resize_keyboard=True)
+
+
+#
+#       Экран Скетчи - нажали Назад
+#
+def get_scetches_short_keyboard():
+    keyboard = InlineKeyboardBuilder()
+
+    keyboard.add(InlineKeyboardButton(text='Заказать',
+                callback_data='scetches_order')) 
+    keyboard.add(InlineKeyboardButton(text='Задать вопрос',
+            url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+            callback_data='scetches_private'))
+    keyboard.add(InlineKeyboardButton(text='К списку услуг',
+                callback_data='start_services'))     
+
+    return keyboard.adjust(1).as_markup(resize_keyboard=True)
+
+
+def get_scetches_after_order_keyboard(is_admin: bool):
+    keyboard = InlineKeyboardBuilder()
+
+    keyboard.add(InlineKeyboardButton(text='К списку услуг',
+                callback_data='start_services'))
+    keyboard.add(InlineKeyboardButton(text='Перейти на сайт',
+                url=general_string.WEB_SITE,
+                callback_data='start_site'))
+    keyboard.add(InlineKeyboardButton(text='Написать в личку',
+                url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+                callback_data='start_private'))
+    keyboard.add(InlineKeyboardButton(text='Поделиться с другом',
+                callback_data='start_share'))
+    
+    if is_admin:
+        keyboard.add(InlineKeyboardButton(text='Админка',
+                    callback_data='start_adminka'))
+    
+    return keyboard.adjust(1).as_markup(resize_keyboard=True)
 
 
 

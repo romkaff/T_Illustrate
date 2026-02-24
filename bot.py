@@ -11,18 +11,30 @@ load_dotenv(find_dotenv())
 from middlewares.db import DataBaseSession
 from database.engine import create_db, drop_db, session_maker
 
+from core.bot import bot 
 from handlers.handlers import handlers_router
+from handlers.scenario.services_handlers import service_router
+from handlers.scenario.scetch_handlers import scetch_router
+from handlers.scenario.scetch_order_handlers import scetch_order_router, SurveyManager
+from handlers.scenario.scetch_portfolio_handlers import scetch_portfolio_router
 from handlers.scenario.admin_handlers import admin_router
-from handlers.scenario.invite_handlers import invite_router
-from handlers.scenario.event_handlers import event_router
+from handlers.scenario.admin_mailing_handlers import admin_mailing_router
+from handlers.scenario.acquaintance_handlers import acquaintance_router
 
 
 # Инициализируем бота и подключаем роутеры
-bot = Bot(token=os.getenv('TOKEN'), default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
+
+survey_manager = SurveyManager(bot=bot)
+scetch_order_router.survey_manager = survey_manager
+
 dp.include_router(admin_router)
-dp.include_router(invite_router)
-dp.include_router(event_router)
+dp.include_router(admin_mailing_router)
+dp.include_router(service_router)
+dp.include_router(scetch_router)
+dp.include_router(scetch_portfolio_router)
+dp.include_router(scetch_order_router)
+dp.include_router(acquaintance_router)
 dp.include_router(handlers_router)
 
 
