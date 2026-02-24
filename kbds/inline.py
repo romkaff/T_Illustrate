@@ -53,6 +53,8 @@ def get_services_keyboard():
 
     keyboard.add(InlineKeyboardButton(text='Скетчи',
                 callback_data='service_scetches'))
+    keyboard.add(InlineKeyboardButton(text='Арт-терапия',
+                callback_data='service_art_therapy'))    
     keyboard.add(InlineKeyboardButton(text='Задать вопрос',
             url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
             callback_data='scetches_private'))
@@ -97,7 +99,15 @@ def get_scetches_short_keyboard():
 
     return keyboard.adjust(1).as_markup(resize_keyboard=True)
 
-
+#
+#       Скетчи
+#
+#       К списку услуг
+#       Перейти на сайт
+#       Написать в личку
+#       Поделиться с другом
+#       Админка
+#
 def get_scetches_after_order_keyboard(is_admin: bool):
     keyboard = InlineKeyboardBuilder()
 
@@ -118,7 +128,25 @@ def get_scetches_after_order_keyboard(is_admin: bool):
     
     return keyboard.adjust(1).as_markup(resize_keyboard=True)
 
+#
+#       Арт-терапия
+#
+#       Групповая
+#       Индивидуальная
+#       Задать вопрос
+#
+def get_art_therapy_keyboard():
+    keyboard = InlineKeyboardBuilder()
 
+    keyboard.add(InlineKeyboardButton(text='Групповая',
+            callback_data='art_therapy_group'))
+    keyboard.add(InlineKeyboardButton(text='Индивидуальная',
+            callback_data='art_therapy_individual')) 
+    keyboard.add(InlineKeyboardButton(text='Задать вопрос',
+            url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+            callback_data='art_therapy_private'))  
+             
+    return keyboard.adjust(1).as_markup(resize_keyboard=True)
 
 
 

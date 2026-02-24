@@ -20,6 +20,7 @@ from handlers.scenario.scetch_portfolio_handlers import scetch_portfolio_router
 from handlers.scenario.admin_handlers import admin_router
 from handlers.scenario.admin_mailing_handlers import admin_mailing_router
 from handlers.scenario.acquaintance_handlers import acquaintance_router
+from handlers.scenario.art_therapy_handlers import art_therapy_router
 
 
 # Инициализируем бота и подключаем роутеры
@@ -35,6 +36,7 @@ dp.include_router(scetch_router)
 dp.include_router(scetch_portfolio_router)
 dp.include_router(scetch_order_router)
 dp.include_router(acquaintance_router)
+dp.include_router(art_therapy_router)
 dp.include_router(handlers_router)
 
 
