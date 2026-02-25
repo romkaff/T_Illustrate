@@ -390,7 +390,7 @@ async def send_contact_choice(message: Message, state: FSMContext):
         keyboard.inline_keyboard.append([
             InlineKeyboardButton(
                 text=contact["name"],
-                callback_data=f"choose_contact_{contact["id"]}"
+                callback_data=f"choose_contact_{contact['id']}"
             )
         ])
 
