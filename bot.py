@@ -5,8 +5,9 @@ from aiogram import Bot, Dispatcher
 from aiogram.enums import ParseMode
 from aiogram.client.default import DefaultBotProperties
 
-from dotenv import find_dotenv, load_dotenv
-load_dotenv(find_dotenv())
+from dotenv import load_dotenv
+load_dotenv() # загружает .env из корня проекта
+load_dotenv('.env.local', override=True)
 
 from middlewares.db import DataBaseSession
 from database.engine import create_db, drop_db, session_maker
