@@ -21,7 +21,7 @@ def get_start_keyboard(is_admin: bool):
                 url=general_string.WEB_SITE,
                 callback_data='start_site'))
     keyboard.add(InlineKeyboardButton(text='Написать в личку',
-                url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+                url=f"https://t.me/{os.getenv('MASHA_NICKNAME')}",
                 callback_data='start_private'))
     keyboard.add(InlineKeyboardButton(text='Поделиться с другом',
                 callback_data='start_share'))
@@ -56,7 +56,7 @@ def get_services_keyboard():
     keyboard.add(InlineKeyboardButton(text='Арт-терапия',
                 callback_data='service_art_therapy'))    
     keyboard.add(InlineKeyboardButton(text='Задать вопрос',
-            url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+            url=f"https://t.me/{os.getenv('MASHA_NICKNAME')}",
             callback_data='scetches_private'))
 
     return keyboard.adjust(1).as_markup(resize_keyboard=True)
@@ -75,7 +75,7 @@ def get_scetches_keyboard():
     keyboard.add(InlineKeyboardButton(text='Заказать',
                 callback_data='scetches_order')) 
     keyboard.add(InlineKeyboardButton(text='Задать вопрос',
-            url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+            url=f"https://t.me/{os.getenv('MASHA_NICKNAME')}",
             callback_data='scetches_private'))
     keyboard.add(InlineKeyboardButton(text='К списку услуг',
                 callback_data='start_services'))     
@@ -92,7 +92,7 @@ def get_scetches_short_keyboard():
     keyboard.add(InlineKeyboardButton(text='Заказать',
                 callback_data='scetches_order')) 
     keyboard.add(InlineKeyboardButton(text='Задать вопрос',
-            url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+            url=f"https://t.me/{os.getenv('MASHA_NICKNAME')}",
             callback_data='scetches_private'))
     keyboard.add(InlineKeyboardButton(text='К списку услуг',
                 callback_data='start_services'))     
@@ -117,7 +117,7 @@ def get_scetches_after_order_keyboard(is_admin: bool):
                 url=general_string.WEB_SITE,
                 callback_data='start_site'))
     keyboard.add(InlineKeyboardButton(text='Написать в личку',
-                url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+                url=f"https://t.me/{os.getenv('MASHA_NICKNAME')}",
                 callback_data='start_private'))
     keyboard.add(InlineKeyboardButton(text='Поделиться с другом',
                 callback_data='start_share'))
@@ -143,7 +143,7 @@ def get_art_therapy_keyboard():
     keyboard.add(InlineKeyboardButton(text='Индивидуальная',
             callback_data='art_therapy_individual')) 
     keyboard.add(InlineKeyboardButton(text='Задать вопрос',
-            url=f'https://t.me/{os.getenv('MASHA_NICKNAME')}',
+            url=f"https://t.me/{os.getenv('MASHA_NICKNAME')}",
             callback_data='art_therapy_private'))  
              
     return keyboard.adjust(1).as_markup(resize_keyboard=True)

@@ -125,7 +125,7 @@ class SurveyManager:
         self.selected_scetch_variant = data.get("selected_scetch_variant", None)
 
         await state.update_data(survey_index=0)
-        await state.set_state(f'SurveyStates:{self.questions[0]["state"]}')
+        await state.set_state(f"SurveyStates:{self.questions[0]["state"]}")
         await self._ask_next_question(callback.message, state, session)
 
     async def _ask_next_question(self, message: types.Message, state: FSMContext, session: AsyncSession):
@@ -360,7 +360,7 @@ async def change_name(message: types.Message, state: FSMContext, session: AsyncS
     
     # 4. Возвращаемся в основной сценарий к следующему вопросу
     await state.update_data(survey_index=return_index + 1)
-    await state.set_state(f'SurveyStates:{survey_manager.questions[return_index + 1]["state"]}')
+    await state.set_state(f"SurveyStates:{survey_manager.questions[return_index + 1]["state"]}")
     
     # 5. Выводим следующий вопрос (телефон)
     await survey_manager._ask_next_question(message, state, session)

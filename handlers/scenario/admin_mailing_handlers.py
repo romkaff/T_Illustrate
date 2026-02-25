@@ -390,7 +390,7 @@ async def send_contact_choice(message: Message, state: FSMContext):
         keyboard.inline_keyboard.append([
             InlineKeyboardButton(
                 text=contact["name"],
-                callback_data=f'choose_contact_{contact["id"]}'
+                callback_data=f"choose_contact_{contact["id"]}"
             )
         ])
 
@@ -442,7 +442,7 @@ async def handle_contact_choice(callback: types.CallbackQuery, state: FSMContext
         temp_filename = f"temp_file_{mailing.id}_{int(time.time())}{ext}"
         temp_filepath = os.path.join(temp_dir, temp_filename)
 
-        print(f'temp_filename = {temp_filename}, temp_filepath = {temp_filepath}')
+        print(f"temp_filename = {temp_filename}, temp_filepath = {temp_filepath}")
 
         # Сохраняем blob в файл
         with open(temp_filepath, "wb") as f:
