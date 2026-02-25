@@ -64,7 +64,7 @@ async def show_portfolio(callback: CallbackQuery):
             ) if index < len(items) - 1 else InlineKeyboardButton(text=" ", callback_data="ignore")
         ],
         [
-            InlineKeyboardButton(text="Заказать", callback_data=f"scetches_order_{category_data["name"]}_{index}")
+            InlineKeyboardButton(text="Заказать", callback_data=f"scetches_order_{category_data['name']}_{index}")
         ],
         [
             InlineKeyboardButton(text="Назад", callback_data=back_data)
@@ -112,7 +112,7 @@ async def portfolio_handler(message: Message, portfolio_type: str = None):
             InlineKeyboardButton(text="➡️", callback_data=f"gallery_{portfolio_type}_1"),
         ],
         [
-            InlineKeyboardButton(text="Заказать", callback_data=f"scetches_order_{category_data["name"]}_{0}")
+            InlineKeyboardButton(text="Заказать", callback_data=f"scetches_order_{category_data['name']}_{0}")
         ],
         [
             InlineKeyboardButton(text="Назад", callback_data=back_data)
