@@ -3,13 +3,18 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 
 from database.models import Base
 
-# TODO from common.texts_for_db import categories, description_for_info_pages
-
 #from .env file:
 # DB_LITE=sqlite+aiosqlite:///my_base.db
 # DB_URL=postgresql+asyncpg://login:password@localhost:5432/db_name
 # engine = create_async_engine(os.getenv('DB_URL'), echo=True)
 
+db_url = os.getenv('DB_LITE')
+if not db_url:
+    raise RuntimeError("DB_LITE environment variable must be set")
+
+# Гарантируем существование папки /data на Amvera
+if db_url.startswith('sqlite+aiosqlite:///data/'):
+    os.makedirs('/data', exist_ok=True)
 
 engine = create_async_engine(os.getenv('DB_LITE'), echo=True)
 
