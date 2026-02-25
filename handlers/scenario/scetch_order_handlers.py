@@ -360,7 +360,7 @@ async def change_name(message: types.Message, state: FSMContext, session: AsyncS
     
     # 4. Возвращаемся в основной сценарий к следующему вопросу
     await state.update_data(survey_index=return_index + 1)
-    await state.set_state(f"SurveyStates:{survey_manager.questions[return_index + 1]["state"]}")
+    await state.set_state(f"SurveyStates:{survey_manager.questions[return_index + 1]['state']}")
     
     # 5. Выводим следующий вопрос (телефон)
     await survey_manager._ask_next_question(message, state, session)
