@@ -27,13 +27,11 @@ async def service_art_therapy(callback: types.CallbackQuery, state: FSMContext):
 
 @art_therapy_router.callback_query(F.data == 'art_therapy_group')
 async def art_therapy_group(callback: types.CallbackQuery, state: FSMContext):
-    await callback.answer('В разработке. Задайте вопрос если хотите узнать подробнее')
-    # await callback.answer();
-    # await callback.message.answer(art_therapy_string.ART_THERAPY_START, reply_markup=get_art_therapy_keyboard())
+    await callback.answer();
+    await callback.message.answer('В разработке. Задайте вопрос если хотите узнать подробнее', reply_markup=get_art_therapy_keyboard())
 
 
 @art_therapy_router.callback_query(F.data == 'art_therapy_individual')
 async def art_therapy_individual(callback: types.CallbackQuery, state: FSMContext):
-    await callback.answer('В разработке. Задайте вопрос если хотите узнать подробнее')
-    # await callback.answer();
-    # await callback.message.answer(art_therapy_string.ART_THERAPY_START, reply_markup=get_art_therapy_keyboard())    
+    await callback.answer();
+    await callback.message.answer('В разработке. Задайте вопрос если хотите узнать подробнее', reply_markup=get_art_therapy_keyboard()) 
