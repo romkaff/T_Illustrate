@@ -125,7 +125,7 @@ class SurveyManager:
         self.selected_scetch_variant = data.get("selected_scetch_variant", None)
 
         await state.update_data(survey_index=0)
-        await state.set_state(f"SurveyStates:{self.questions[0]["state"]}")
+        await state.set_state(f"SurveyStates:{self.questions[0]['state']}")
         await self._ask_next_question(callback.message, state, session)
 
     async def _ask_next_question(self, message: types.Message, state: FSMContext, session: AsyncSession):
