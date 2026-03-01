@@ -33,14 +33,14 @@ async def handle_name(message: types.Message, state: FSMContext, session: AsyncS
     await message.answer(f"Привет, {user.specified_name}!\n\n{general_string.START_CMD}", reply_markup=get_start_keyboard(AcquaintanceStates.is_admin))
 
 
-@acquaintance_router.message(CommandStart)
-async def command_start(message: types.Message, state: FSMContext, session: AsyncSession, back_from: bool = False):
-    command_start_handle(message, state, session, back_from)
-
-
 @acquaintance_router.message(Command("start"))
 async def command_start(message: types.Message, state: FSMContext, session: AsyncSession, back_from: bool = False):
-    command_start_handle(message, state, session, back_from)
+    await command_start_handle(message, state, session, back_from)
+
+
+@acquaintance_router.message(CommandStart)
+async def command_start(message: types.Message, state: FSMContext, session: AsyncSession, back_from: bool = False):
+    await command_start_handle(message, state, session, back_from)
 
 
 async def command_start_handle(message: types.Message, state: FSMContext, session: AsyncSession, back_from: bool = False):
