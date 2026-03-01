@@ -1,7 +1,7 @@
 import os
 
 from aiogram import Router, types, F
-from aiogram.filters import CommandStart
+from aiogram.filters import CommandStart, Command
 from aiogram.fsm.context import FSMContext
 from sqlalchemy.ext.asyncio import AsyncSession
 from aiogram.fsm.state import State, StatesGroup
@@ -35,6 +35,15 @@ async def handle_name(message: types.Message, state: FSMContext, session: AsyncS
 
 @acquaintance_router.message(CommandStart)
 async def command_start(message: types.Message, state: FSMContext, session: AsyncSession, back_from: bool = False):
+    command_start_handle(message, state, session, back_from)
+
+
+@acquaintance_router.message(Command("start"))
+async def command_start(message: types.Message, state: FSMContext, session: AsyncSession, back_from: bool = False):
+    command_start_handle(message, state, session, back_from)
+
+
+async def command_start_handle(message: types.Message, state: FSMContext, session: AsyncSession, back_from: bool = False):
     data = {}
     data["user_id"] = message.from_user.id
     data["user_first_name"] = message.from_user.first_name
