@@ -1,5 +1,6 @@
 import os
 import re
+import json
 from datetime import datetime
 
 from aiogram import Router, types, F, Bot
@@ -10,8 +11,8 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMar
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from kbds.inline import get_scetches_after_order_keyboard, get_callback_btns
+from strings import scetch_string
 from handlers.scenario import scetch_handlers
-from strings import scetch_questionnaire, scetch_string
 from database.models import ScetchRequest
 from database.orm_query import (
     orm_add_scetch_request,
@@ -30,7 +31,9 @@ bot_name = os.getenv('BOT_NAME')
 # Загрузка опросника
 #
 def load_questionnaire(category_filter: str = None) -> dict:
-    full_questionnaire = scetch_questionnaire.scetch_quest_json
+    # Загружаем JSON‑файл
+    with open('strings/scetch_questionnaire.json', 'r', encoding='utf-8') as file:
+        full_questionnaire = json.load(file)
 
     # Без фильтра возвращаем весь опросник
     if not category_filter:
